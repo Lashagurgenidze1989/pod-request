@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo&display=swap");
+
+html {
+  font-size: 10px;
+  font-family: "Chivo";
+}
+
+input {
+  font-family: "Chivo";
+}
+
+button {
+  font-family: "Chivo";
+}
+
+body {
+}
+
+main {
+  padding: 0 2.4rem;
+}
+
+main .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 17.5rem;
+  gap: 1.6rem;
+}
+
+.info h1 {
+  color: #54e6af;
+  text-align: center;
+  font-size: 2.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.8rem;
+  text-transform: uppercase;
+}
+
+.info h1 span {
+  color: #fff;
+}
+
+.info p {
+  color: #c2cbe5;
+  text-align: center;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.5rem;
+}
+
+.logosAndButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4.8rem;
+}
+
+.logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
