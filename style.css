@@ -1,5 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Chivo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo:wght@400;500&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
 html {
   font-size: 10px;
   font-family: "Chivo";
@@ -14,6 +20,18 @@ button {
 }
 
 body {
+  background-image: url(./assets/mobile/image-host.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #121725;
+  background-blend-mode: soft-light;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: 10px;
+  right: auto;
 }
 
 main {
@@ -37,6 +55,7 @@ main .info {
   font-weight: 400;
   line-height: 3.8rem;
   text-transform: uppercase;
+  width: 22ch;
 }
 
 .info h1 span {
@@ -50,6 +69,7 @@ main .info {
   font-style: normal;
   font-weight: 400;
   line-height: 2.5rem;
+  width: 36ch;
 }
 
 .logosAndButton {
@@ -58,10 +78,74 @@ main .info {
   align-items: center;
   justify-content: center;
   gap: 4.8rem;
+  margin-top: 3.3rem;
 }
 
 .logos {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#spotify {
+  width: 56px;
+  height: 17px;
+  margin-right: 23px;
+}
+
+#apple {
+  width: 45px;
+  height: 17px;
+  margin-right: 25px;
+}
+
+#google {
+  width: 73px;
+  height: 11px;
+  margin-right: 16px;
+}
+
+#pocket {
+  width: 77px;
+  height: 15px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+}
+
+.email {
+  border-radius: 28px;
+  background: #2c344b;
+  border: none;
+  width: 32.7rem;
+  height: 4.6rem;
+  color: white;
+  padding-left: 3.2rem;
+}
+
+.email::placeholder {
+  color: #fff;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.8rem;
+  opacity: 0.5;
+}
+
+.btn {
+  border-radius: 28px;
+  background: #54e6af;
+  box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.5);
+  border: none;
+  padding: 10px 110px;
+  color: #121725;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.8rem;
 }
