@@ -16,7 +16,7 @@ button.addEventListener("click", () => {
     input.value = "";
   } else {
     error.textContent = "Oops! Please check your email";
-    error.style.color = "#fb3e3e;";
+    error.style.color = "#fb3e3e";
     input.value = "";
   }
 });
