@@ -25,17 +25,14 @@ body {
   background-size: cover;
   background-color: #121725;
   background-blend-mode: soft-light;
-  position: relative;
-}
-
-.logo {
-  position: absolute;
-  top: 10px;
-  right: auto;
 }
 
 main {
-  padding: 0 2.4rem;
+  background-image: url(./assets/desktop/logo.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 6.2rem;
+
+  padding: 17.5rem 2.4rem 9.4rem;
 }
 
 main .info {
@@ -43,7 +40,6 @@ main .info {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 17.5rem;
   gap: 1.6rem;
 }
 
@@ -142,10 +138,135 @@ main .info {
   background: #54e6af;
   box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.5);
   border: none;
-  padding: 10px 110px;
+  padding: 9px 110px;
   color: #121725;
   font-size: 1.4rem;
   font-style: normal;
   font-weight: 500;
   line-height: 2.8rem;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url(./assets/tablet/image-host.jpg),
+      url(./assets/desktop/logo.svg), url(./assets/desktop/bg-pattern-dots.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-color: #121725;
+    background-blend-mode: normal;
+    background-position: top right, 3.9rem 5rem, 3rem bottom;
+    padding: 25.8rem 9.4rem 25.7rem 3.9rem;
+  }
+
+  main {
+    width: 63.5rem;
+    height: 50.9rem;
+    padding: 9.3rem 0 0 0;
+
+    background-color: #121725;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+    background-image: none;
+  }
+
+  main .info {
+    gap: 0;
+
+    align-items: start;
+  }
+
+  .info h1 {
+    font-size: 4.8rem;
+    line-height: 5.6rem;
+    text-align: left;
+  }
+
+  .info p {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    text-align: left;
+    margin-top: 3.1rem;
+    width: 40ch;
+  }
+
+  .logosAndButton {
+    align-items: start;
+    flex-direction: column-reverse;
+    gap: 3.8rem;
+    margin-top: 4rem;
+  }
+
+  .buttons {
+    position: relative;
+    gap: 0;
+    align-items: start;
+  }
+
+  .email {
+    border: none;
+    width: 42.7rem;
+    height: 5.6rem;
+  }
+
+  .btn {
+    padding: 9px 27px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+  }
+
+  #spotify {
+    width: 96px;
+    height: 29px;
+    margin-right: 40px;
+  }
+
+  #apple {
+    width: 78px;
+    height: 29px;
+    margin-right: 41px;
+  }
+
+  #google {
+    width: 125px;
+    height: 18px;
+    margin-right: 27px;
+  }
+
+  #pocket {
+    width: 129px;
+    height: 26px;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    background-image: url(./assets/desktop/bg-pattern-dots.svg),
+      url(./assets/desktop/image-host.jpg), url(./assets/desktop/logo.svg);
+    background-position: right bottom 78px, top 13rem right, 16.5rem 10.2rem;
+    padding: 26.1rem 55.2rem 13rem 16.5rem;
+  }
+
+  main {
+    width: 72.3rem;
+    height: 50.9rem;
+    padding: 8.8rem 0 0 0;
+  }
+
+  .info h1 {
+    font-size: 5.2rem;
+    line-height: 6.2rem;
+  }
+
+  .info p {
+    margin-top: 2.4rem;
+  }
+
+  .btn:hover {
+    cursor: pointer;
+    background: #b3ffe2;
+  }
 }
